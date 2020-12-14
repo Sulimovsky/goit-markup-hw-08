@@ -1,0 +1,78 @@
+.container-filter {
+    margin-bottom: 50px;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-bottom: 30px;
+    }
+}
+
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+    }
+
+    .btn {
+        @media screen and (max-width: 767px) {
+            margin-top: 15px;
+            margin-right: 15px;
+        }
+
+        &:not(:last-child) {
+            @media screen and (min-width: 768px) {
+            margin-right: 8px;
+            }
+        }
+    }
+}
+
+.btn-one {
+    width: 73px;
+    height: 38px;
+}
+
+.btn-two {
+    width: 128px;
+    height: 38px;
+}
+
+.btn-three {
+    width: 145px;
+    height: 38px;
+}
+
+.btn-four {
+    width: 103px;
+    height: 38px;
+}
+
+.btn-five {
+    width: 130px;
+    height: 38px;
+}
+
+.filter button {
+    color: $secondary-text-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5F4FA;
+    border: 1px solid #F5F4FA;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 250ms $main-cubic-bezier;
+
+    &:hover,
+    &:focus {
+    color: $white-color;
+    background-color: $backlight-color;
+    border-color: $backlight-color;
+    }
+}

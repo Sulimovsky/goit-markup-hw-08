@@ -1,0 +1,35 @@
+.team-social-list {
+    display: inline-flex;
+    margin-top: 28px
+}
+
+.team-social-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.team-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    transition: background-color 250ms $main-cubic-bezier;
+
+    &:hover,
+    &:focus {
+    background-color: $backlight-color;
+    }
+
+    &:hover .team-social-icon,
+    &:focus .team-social-icon {
+    fill: $white-color;
+    }
+}
+
+.team-social-icon {
+    fill: $primary-icon-color;
+    width: 20px;
+    height: 20px;
+    transition: fill 250ms $main-cubic-bezier;
+}
